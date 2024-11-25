@@ -523,7 +523,8 @@ if page == "How to use":
     st.header("This tab provides a detailed guide on how to use the application.")
     st.header("Introduction")
     st.write("This application provides an intuitive interface for seamless lead management and data visualization. Below is an overview of its key features and functionalities:")
-    
+    st.header("The Google Sheets used as the database for this app can be accessed here:")
+    st.write("https://docs.google.com/spreadsheets/d/16503rram7sWp50q6221OozEdi8t1YNiPSfao0X414ss/edit?usp=sharing")
     st.header("Lead Listing")
     st.write("This tab displays comprehensive lead data sourced directly from the database (Google Sheets), accessible to both backend developers and end-users.")
     st.write("Includes a dynamic filter to view leads by status (e.g., All, New, etc.), enabling efficient data segmentation.")
