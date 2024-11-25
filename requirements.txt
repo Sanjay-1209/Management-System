@@ -1,6 +1,7 @@
 streamlit
 pandas
-gspread
+gspread==6.1.4
+google-auth==2.23.4
 google.oauth2.service_account 
 Credentials
 plotly.express
