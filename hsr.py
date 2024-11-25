@@ -535,8 +535,8 @@ if page == "How to use":
     st.write("Updates are instantly reflected in the Lead Listing tab, ensuring consistency across the application. (You can verify this synchronization by revisiting the Lead Listing tab.)")
 
     st.header("Lead Management")
-    st.write("**This tab offers functionality to add new leads and manage associated details.**")
-    st.write("Designed for effortless lead creation and streamlined information handling.")
+    st.write("**This tab offers functionality to add new leads, delete existing leads and manage associated details.**")
+    st.write("Designed for effortless lead creation, deletion and streamlined information handling.")
 
     st.header("Dashboard")
     st.write("**The primary dashboard provides insightful visualizations tailored to the client’s needs.**")
