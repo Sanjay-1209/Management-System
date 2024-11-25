@@ -551,14 +551,15 @@ import plotly.express as px
 # Set up the credentials for accessing Google Sheets
 scopes = ["https://www.googleapis.com/auth/spreadsheets", "https://www.googleapis.com/auth/drive.readonly"]
 
-# Load the credentials from Streamlit secrets
+# Load credentials from Streamlit secrets
 credentials_dict = st.secrets["google_credentials"]
 
-# Create the credentials object from the secrets dictionary
-creds = Credentials.from_service_account_info(credentials_dict)
+# Create the credentials object from the secrets
+creds = Credentials.from_service_account_info(credentials_dict, scopes=scopes)
 
-# Authorize the client with credentials
+# Authorize the client
 client = gspread.authorize(creds)
+
 
 # The ID of your Google Sheet (from the URL)
 sheet_id = '16503rram7sWp50q6221OozEdi8t1YNiPSfao0X414ss'  # Replace with your actual Sheet ID
